@@ -1,0 +1,22 @@
+﻿<Window x:Name="mainWindow" x:Class="WpfApplication2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="ПТУР" WindowStyle="ToolWindow" MouseDown="mainWindow_MouseDown" MouseMove="mainWindow_MouseMove" Height="700" Width="678"  WindowStartupLocation="CenterScreen" ResizeMode="NoResize" KeyDown="mainWindow_KeyDown">
+    <Grid x:Name="mainGrid">
+        <Canvas x:Name="background">
+            <Image x:Name="backgroundImage" Source="Img\Field.png" Width="2370" Height="1481"/>
+        </Canvas>
+        <Canvas x:Name="tank">
+            <Image x:Name="tankImage" Visibility ="hidden" Source="Img\tank.png"/>
+            <Image x:Name="tankImage2" Visibility ="hidden" Source="Img\tank2.png"/>
+        </Canvas>
+        <Image Source="Img\Aim.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Rectangle x:Name="Indicator" Fill="Red" Width="10" Height="10" VerticalAlignment="Top" HorizontalAlignment="Left"></Rectangle>
+        <Ellipse x:Name="MissileIndicator" Fill="Yellow" Width="10" Height="10" VerticalAlignment="Top" HorizontalAlignment="Left"></Ellipse>
+        <TextBlock x:Name="Range" Text="" FontFamily="Tahoma" FontSize="12" Foreground="Orange" Visibility="Hidden"></TextBlock>
+    </Grid>
+
+</Window>
